@@ -388,8 +388,8 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close_button" data-modal-close>
-                <svg class="modal-close_button-icon" >
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="modal-close-button-icon" >
                     <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
@@ -416,12 +416,10 @@
                     </span>
                 </label>
 
-                <label class="modal-form-label">Коментарий</label>
-                <textarea class="modal-form-textarea" name="coment" placeholder="Введите текст" >
-                       
-                </textarea>
+                <label class="modal-form-label">Комментарий</label>
+                <textarea class="modal-form-textarea" name="coment" placeholder="Введите текст"></textarea>
                 <input type="checkbox" name="user-license" id="license-check" class="modal-form-check-license visually-hidden">
-                <label for="license-check" class="modal-form-label-policy">Соглашаюсь с рассылкой и принимаю <a clas="modal-form-license-link" href="">Условия договора</a> </label>
+                <label for="license-check" class="modal-form-label-license">Соглашаюсь с рассылкой и принимаю <a class="modal-form-license-link" href="">Условия договора</a> </label>
                 <button type="submit" class="modal-form-button">Oтправить</button>
             </form>
         </div>
