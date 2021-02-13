@@ -675,10 +675,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: #ffffff;
     }
     .footer-form-button {
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         min-width: 200px;
         height: 50px;
         font-weight: 700;
@@ -839,6 +841,7 @@ color: #757575;
 }
 /* end portfolio */
 
+/* modal-window */
 .backdrop {
     position: fixed;
     top: 0;
@@ -861,7 +864,10 @@ color: #757575;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-.modal-close_button {
+/* end modal window */
+
+/* modal form */
+.modal-close-button {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -875,12 +881,21 @@ color: #757575;
     cursor: pointer;
     display: flex;
 }
-.modal-close_button-icon {
+.modal-close-button-icon {
     width: 20px;
     height: 20px;
     padding-top: 3px;
     align-items: center;
     justify-content: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-button-icon:hover {
+    fill: var(--accent-color);
+}
+.modal-close-button:focus .modal-close-button-icon{
+    fill: var(--accent-color);  
 }
 .is-hidden {
     opacity: 0;
@@ -911,6 +926,9 @@ color: #757575;
     transform: translateY(-50%);
     top: 50%;
     left: 14px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icon-tel {
     width: 17px;
@@ -920,6 +938,9 @@ color: #757575;
     transform: translateY(-50%);
     top: 50%;
     left: 14px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icon-email {
     width: 20px;
@@ -929,6 +950,9 @@ color: #757575;
     transform: translateY(-50%);
     top: 50%;
     left: 14px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-label {
     align-self:flex-start;
@@ -948,6 +972,9 @@ color: #757575;
     box-sizing: border-box;
     border-radius: 4px; 
     margin-top: 7px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modai-form-input-align {
     display: block;
@@ -958,20 +985,26 @@ color: #757575;
     height: 120px;
     resize: none;
     margin-bottom: 20px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.01em;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 }
 .modal-form-textarea::placeholder {
-
     color: rgba(117, 117, 117, 0.5);
 }
-.modal-form-label-policy {
+.modal-form-label-license {
     display: flex;
     align-items: center;
     font-weight: normal;
@@ -979,11 +1012,14 @@ color: #757575;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .modal-form-input:focus {
     padding-left: 42px;
 }
-.modal-form-label-policy::before {
+.modal-form-label-license::before {
     display: inline-block;
     content: "";
     background-image: url(/images/Vector.svg);
@@ -993,15 +1029,18 @@ color: #757575;
     align-self: center;
     background-repeat: no-repeat;
     margin-right: 10px;
+    transition-property: background-image;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-check-license:checked + .modal-form-label-policy::before {
-    background-image: url(/images/icon\ check.svg);
+.modal-form-check-license:checked + .modal-form-label-license::before {
+    background-image: url(/images/iconcheck.svg);
     width: 16px;
     height: 15px;
     background-repeat: no-repeat;
     align-self: center;
 }
-.modal-form-check-license:focus + .modal-form-label-policy::before {
+.modal-form-check-license:focus + .modal-form-label-license::before {
    outline: 1px solid var(--accent-color);
 }
 .modal-form-button {
@@ -1022,7 +1061,6 @@ color: #757575;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-
 }
 .modal-form-input:focus {
     outline: none;
@@ -1044,4 +1082,5 @@ color: #757575;
     box-sizing: border-box;
     border-radius: 4px;
 }
+/* end modal form */
 
