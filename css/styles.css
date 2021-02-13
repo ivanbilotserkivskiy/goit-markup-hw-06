@@ -1022,7 +1022,7 @@ color: #757575;
 .modal-form-label-license::before {
     display: inline-block;
     content: "";
-    background-image: url(/images/Vector.svg);
+    background-image: url(../images/Vector.svg);
     width: 16px;
     height: 15px;
     fill:#000000;
@@ -1034,7 +1034,7 @@ color: #757575;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-check-license:checked + .modal-form-label-license::before {
-    background-image: url(/images/iconcheck.svg);
+    background-image: url(../images/iconcheck.svg);
     width: 16px;
     height: 15px;
     background-repeat: no-repeat;
