@@ -540,6 +540,7 @@ margin-bottom: 15px;
 }
 .footer .container{
     display: flex;
+    justify-content: space-between;
 }
 .footer-logotype {
 font-weight: 700;
@@ -643,7 +644,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }    
     
     .footer-form-div {
-        margin-left: 95px;
+        margin-left: 93px;
         align-items: center;
     }
     .footer-form {
@@ -965,8 +966,7 @@ color: #757575;
 }
 .modal-form-input {
     min-width: 448px;
-    width: 100%;
-    height: 34px;
+    height: 40px;
     display: block;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -981,7 +981,7 @@ color: #757575;
     position: relative;
 }
 .modal-form-textarea{
-    width: 100%;
+    width: 448px;
     height: 120px;
     resize: none;
     margin-bottom: 20px;
